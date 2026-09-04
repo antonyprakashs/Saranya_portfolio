@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T. Saranya — UI/UX Designer | Mobile & Web Design Portfolio</title>
+  <meta name="description" content="Portfolio of T. Saranya, a passionate UI/UX Designer based in Chengalpattu specializing in intuitive mobile apps (iOS & Android), web design, wireframing, prototyping, and design systems.">
+  <meta name="keywords" content="T. Saranya, UI/UX Designer, Portfolio, Figma, User Research, Mobile App Design, Chengalpattu, Web Design">
+  <meta name="author" content="T. Saranya">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="T. Saranya — UI/UX Designer Portfolio">
+  <meta property="og:description" content="Crafting intuitive, user-friendly mobile apps and websites that seamlessly blend functional UX with stunning visual design.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="T. Saranya Home">
+        <span class="logo-text">Saranya</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-num">02.</span> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><span class="nav-num">03.</span> Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><span class="nav-num">04.</span> Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-num">05.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Status indicator badge -->
+        <div class="status-pill" title="Current Status">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for work</span>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light theme" title="Switch Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="badge-icon">✨</span>
+            <span>UI/UX Designer &amp; Problem Solver</span>
+          </div>
+
+          <h1 class="hero-title reveal delay-1">
+            Crafting <span class="gradient-text">intuitive</span> &amp; human-centered digital experiences.
+          </h1>
+
+          <p class="hero-subtitle reveal delay-2">
+            Hello! I'm <strong class="text-highlight">T. Saranya</strong>, a passionate UI/UX Designer based in Chengalpattu. I specialize in designing intuitive mobile apps and websites that seamlessly blend functional user experiences with stunning visual hierarchy.
+          </p>
+
+          <div class="hero-actions reveal delay-3">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Case Studies</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <button class="btn btn-secondary copy-email-btn" id="heroCopyEmailBtn" data-email="saranyat5723@gmail.com">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email</span>
+            </button>
+            <a href="https://www.figma.com/proto/vwuZeeGIDOZQnzNbLYD56X/sweets?node-id=69-133&p=f&t=VWzfDO6OPXDsxlv4-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=168%3A977&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+              <span>Live Figma Prototype</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Bar -->
+          <div class="hero-stats reveal delay-4">
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">User-Centered Approach</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-number">Figma</span>
+              <span class="stat-label">Component Systems &amp; Prototyping</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-number">B.Sc. CS</span>
+              <span class="stat-label">Class of 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual reveal-scale delay-2">
+          <div class="visual-card-wrapper">
+            <div class="visual-card-glass">
+              <div class="visual-header">
+                <div class="window-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="visual-tab-title">Design System &amp; Flows</div>
+                <div class="visual-figma-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+                  <span>Figma Verified</span>
+                </div>
+              </div>
+
+              <div class="visual-image-container">
+                <img src="assets/design_system.jpg" alt="Saranya UI/UX Design System and Mobile Screens in Figma" class="hero-main-img">
+                <div class="visual-overlay-gradient"></div>
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-chip chip-1">
+                <div class="chip-icon">🎯</div>
+                <div class="chip-text">
+                  <strong>User Research</strong>
+                  <span>Empathy &amp; Persona</span>
+                </div>
+              </div>
+
+              <div class="floating-chip chip-2">
+                <div class="chip-icon">⚡</div>
+                <div class="chip-text">
+                  <strong>Interactive Flow</strong>
+                  <span>Smart Animate</span>
+                </div>
+              </div>
+
+              <div class="floating-chip chip-3">
+                <div class="chip-icon">📐</div>
+                <div class="chip-text">
+                  <strong>Design Systems</strong>
+                  <span>Auto-Layout &amp; Tokens</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag"><span class="section-num">01</span> ABOUT ME</div>
+          <h2 class="section-title">Designing with empathy, bridging design &amp; code.</h2>
+          <p class="section-subtitle">A deep dive into my background, design philosophy, and core focus areas.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Main Column -->
+          <div class="about-bio-card card-glass reveal-left">
+            <div class="bio-intro-header">
+              <h3 class="bio-name">T. Saranya</h3>
+              <p class="bio-role">UI/UX Designer • Chengalpattu, Tamil Nadu</p>
+            </div>
+
+            <p class="bio-paragraph">
+              Hello! I'm <strong>T. Saranya</strong>, a passionate UI/UX Designer based in Chengalpattu. I specialize in crafting intuitive, user-friendly mobile apps and websites that seamlessly blend functional user experiences with stunning visual designs.
+            </p>
+            <p class="bio-paragraph">
+              My design process revolves around understanding user behavior, solving complex visual hierarchy challenges, and turning complex ideas into clean, interactive digital experiences that users love to engage with.
+            </p>
+
+            <div class="bridge-highlight-box">
+              <div class="bridge-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="bridge-content">
+                <h4>Bridging the Gap Between Design &amp; Development</h4>
+                <p>I combine user-centered design principles with fundamental frontend knowledge (HTML5, CSS3, JavaScript) to ensure practical feasibility, effortless developer handoffs, and pixel-perfect design executions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fact Sheet Grid -->
+          <div class="about-facts-grid">
+            <div class="fact-card card-glass reveal-right delay-1">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-label">Full Name</span>
+                <span class="fact-value">T. Saranya</span>
+              </div>
+            </div>
+
+            <div class="fact-card card-glass reveal-right delay-2">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-label">Primary Role</span>
+                <span class="fact-value">UI/UX Designer</span>
+              </div>
+            </div>
+
+            <div class="fact-card card-glass reveal-right delay-3">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Chengalpattu, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <div class="fact-card card-glass reveal-right delay-4">
+              <div class="fact-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <div class="fact-details">
+                <span class="fact-label">Core Focus</span>
+                <span class="fact-value">Mobile Apps (iOS &amp; Android), Web Design, Design Systems &amp; Prototyping</span>
+              </div>
+            </div>
+
+            <div class="fact-card card-glass fact-status-highlight reveal-right delay-5">
+              <div class="fact-icon-wrap status-icon">
+                <span class="pulse-indicator"></span>
+              </div>
+              <div class="fact-details">
+                <span class="fact-label">Current Availability</span>
+                <span class="fact-value text-success">Available for full-time roles &amp; freelance design projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. SKILLS & TOOLKIT SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag"><span class="section-num">02</span> SKILLS &amp; TOOLKIT</div>
+          <h2 class="section-title">Design tools, UX methodologies &amp; frontend foundations.</h2>
+          <p class="section-subtitle">Combining user empathy, structural visual hierarchy, and technical understanding.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter reveal delay-1" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="design-tools" role="tab" aria-selected="false">Design Tools</button>
+          <button class="filter-btn" data-filter="core-ux" role="tab" aria-selected="false">UX/UI Core</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend Basics</button>
+        </div>
+
+        <div class="skills-cards-grid">
+          <!-- Design Tools -->
+          <div class="skill-category-card card-glass reveal-scale delay-1" data-category="design-tools">
+            <div class="category-header">
+              <div class="category-icon-box fig-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+              </div>
+              <div>
+                <span class="category-badge">Primary Tool</span>
+                <h3 class="category-title">Design Tools</h3>
+              </div>
+            </div>
+
+            <div class="skill-item primary-skill">
+              <div class="skill-info">
+                <div class="skill-name-row">
+                  <h4 class="skill-title">Figma</h4>
+                  <span class="skill-tag">Expert Focus</span>
+                </div>
+                <p class="skill-desc">Primary industry tool for UI design, structured component libraries, auto-layout workflows, variant states, and high-fidelity interactive prototypes.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">Component Systems</span>
+                <span class="subchip">Interactive Prototypes</span>
+                <span class="subchip">Auto Layout</span>
+                <span class="subchip">Design Tokens</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- UX/UI Core Skills: Wireframing -->
+          <div class="skill-category-card card-glass reveal-scale delay-2" data-category="core-ux">
+            <div class="category-header">
+              <div class="category-icon-box ux-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <div>
+                <span class="category-badge">UX Core</span>
+                <h3 class="category-title">Wireframing</h3>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <p class="skill-desc">Structural layout planning, information architecture, low-fidelity concept sketching, and user journey roadmaps to establish solid foundations before visual styling.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">Low-Fi Sketches</span>
+                <span class="subchip">Layout Hierarchy</span>
+                <span class="subchip">User Flows</span>
+                <span class="subchip">Screen Maps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- UX/UI Core Skills: Prototyping -->
+          <div class="skill-category-card card-glass reveal-scale delay-3" data-category="core-ux">
+            <div class="category-header">
+              <div class="category-icon-box proto-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <div>
+                <span class="category-badge">UX Core</span>
+                <h3 class="category-title">Interactive Prototyping</h3>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <p class="skill-desc">Building interactive, realistic design flows for mobile and desktop testing, user micro-interactions, transition pacing, and stakeholder walkthroughs.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">Micro-interactions</span>
+                <span class="subchip">Smart Animate</span>
+                <span class="subchip">Mobile Gestures</span>
+                <span class="subchip">Usability Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- UX/UI Core Skills: User Research -->
+          <div class="skill-category-card card-glass reveal-scale delay-4" data-category="core-ux">
+            <div class="category-header">
+              <div class="category-icon-box research-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <span class="category-badge">UX Core</span>
+                <h3 class="category-title">User Research</h3>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <p class="skill-desc">Conducting user interviews, empathy mapping, persona creation, heuristic evaluations, and usability testing to ground every design decision in genuine user needs.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">User Interviews</span>
+                <span class="subchip">User Personas</span>
+                <span class="subchip">Empathy Mapping</span>
+                <span class="subchip">Usability Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Basics: HTML5 & CSS3 -->
+          <div class="skill-category-card card-glass reveal-scale delay-5" data-category="frontend">
+            <div class="category-header">
+              <div class="category-icon-box code-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <span class="category-badge">Frontend Foundations</span>
+                <h3 class="category-title">HTML5 &amp; CSS3</h3>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <p class="skill-desc">Structuring semantic web pages and crafting responsive styling with Flexbox, CSS Grid, media queries, CSS variables, and modern web layouts.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">Semantic HTML5</span>
+                <span class="subchip">Responsive CSS3</span>
+                <span class="subchip">Flexbox &amp; Grid</span>
+                <span class="subchip">Design Tokens</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Basics: JavaScript -->
+          <div class="skill-category-card card-glass reveal-scale delay-6" data-category="frontend">
+            <div class="category-header">
+              <div class="category-icon-box js-color">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              </div>
+              <div>
+                <span class="category-badge">Frontend Foundations</span>
+                <h3 class="category-title">JavaScript</h3>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <p class="skill-desc">Basic interactivity, DOM manipulation, event handling, dynamic UI behavior, and smooth component animations to understand frontend feasibility.</p>
+              </div>
+              <div class="skill-subchips">
+                <span class="subchip">DOM Logic</span>
+                <span class="subchip">UI Interactivity</span>
+                <span class="subchip">Event Handlers</span>
+                <span class="subchip">Dev Empathy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Process Flow -->
+        <div class="design-process-box card-glass reveal">
+          <div class="process-header">
+            <span class="process-tag">METHODOLOGY</span>
+            <h3 class="process-title">My End-to-End Design Workflow</h3>
+          </div>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-badge">01</div>
+              <h4 class="step-name">Discover &amp; Research</h4>
+              <p class="step-text">User interviews, persona building &amp; identifying core user friction points.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-badge">02</div>
+              <h4 class="step-name">Wireframe &amp; Structure</h4>
+              <p class="step-text">Information architecture, paper sketches &amp; low-fidelity screen layouts.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-badge">03</div>
+              <h4 class="step-name">UI &amp; Design System</h4>
+              <p class="step-text">Visual hierarchy, color schemes, typography, and reusable Figma components.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="step-badge">04</div>
+              <h4 class="step-name">Prototype &amp; Test</h4>
+              <p class="step-text">Interactive user testing, animation polish &amp; smooth developer handoff.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag"><span class="section-num">03</span> FEATURED PROJECT</div>
+          <h2 class="section-title">Crafted case study &amp; interactive prototype.</h2>
+          <p class="section-subtitle">Real-world problem solving through deliberate user-centered design.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Featured Project: Farmer's Market App -->
+          <article class="project-card featured-case-study card-glass reveal">
+            <div class="project-visual-side reveal-left">
+              <div class="project-img-wrapper">
+                <img src="assets/farmers_market.jpg" alt="Farmer's Market App UI/UX Design Mockup by Saranya" class="project-img" loading="lazy">
+                <div class="project-badge-overlay">
+                  <span class="badge-featured">Featured Case Study</span>
+                  <span class="badge-type">Mobile App (D2C)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-side reveal-right">
+              <div class="project-meta-row">
+                <span class="project-index">FEATURED PROJECT</span>
+                <span class="project-role-badge">End-to-End UI/UX Designer</span>
+              </div>
+
+              <h3 class="project-title">Farmer's Market App</h3>
+              <p class="project-type-subtitle">Mobile Application Design • Direct-to-Consumer Platform</p>
+
+              <div class="project-role-summary">
+                <strong>My Role:</strong> End-to-End UI/UX Designer (User Research, Wireframing, UI Design &amp; Prototyping)
+              </div>
+
+              <div class="project-overview-block">
+                <h4 class="overview-heading">Project Overview</h4>
+                <p class="overview-text">
+                  A mobile platform designed to directly connect farmers with consumers, eliminating middleman commissions. This allows farmers to sell their produce at better profit margins while enabling buyers to purchase fresh, organic products at lower, fair market prices.
+                </p>
+              </div>
+
+              <div class="project-features-block">
+                <h4 class="features-heading">Key Features &amp; Design Solutions:</h4>
+                <ul class="features-list">
+                  <li>
+                    <span class="feature-bullet">🌱</span>
+                    <div>
+                      <strong>Direct Farmer-to-Buyer Marketplace:</strong> Simple, intuitive navigation for browsing local produce without intermediary markups.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="feature-bullet">✨</span>
+                    <div>
+                      <strong>Accessible Interface:</strong> Minimalist UI designed with high visual clarity and high-contrast typography for effortless use by farmers and consumers alike.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="feature-bullet">📦</span>
+                    <div>
+                      <strong>Order &amp; Listing Workflow:</strong> Streamlined, step-by-step process for farmers to quickly upload produce, adjust prices, and manage inventory seamlessly.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-deliverables">
+                <h4 class="deliverables-heading">Deliverables:</h4>
+                <div class="deliverable-chips">
+                  <span class="deliverable-chip">End-to-End User Flow</span>
+                  <span class="deliverable-chip">Low-Fi Wireframes</span>
+                  <span class="deliverable-chip">High-Fidelity UI Design</span>
+                  <span class="deliverable-chip">Interactive Figma Prototype</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://www.figma.com/proto/vwuZeeGIDOZQnzNbLYD56X/sweets?node-id=69-133&p=f&t=VWzfDO6OPXDsxlv4-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=168%3A977&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Launch Live Prototype</span>
+                </a>
+                <button class="btn btn-secondary open-case-study-modal" data-project="farmers-market">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>View Design Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. EXPERIENCE & EDUCATION SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag"><span class="section-num">04</span> EXPERIENCE &amp; EDUCATION</div>
+          <h2 class="section-title">My design journey, internships &amp; education.</h2>
+          <p class="section-subtitle">A balanced blend of hands-on UX design practice and Computer Science education.</p>
+        </div>
+
+        <div class="timeline-dual-grid">
+          <!-- Experience Column -->
+          <div class="timeline-column reveal-left">
+            <div class="column-header">
+              <div class="col-icon exp-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <h3 class="col-title">Work Experience</h3>
+            </div>
+
+            <div class="timeline-items">
+              <!-- Item 1 -->
+              <div class="timeline-item card-glass">
+                <div class="item-badge-row">
+                  <span class="role-badge">UI/UX Design Intern</span>
+                  <span class="period-pill current-pill">Present</span>
+                </div>
+                <h4 class="company-name">Perlyri (Shine Chennai)</h4>
+                <ul class="timeline-points">
+                  <li>Gaining practical experience in user interface design, visual hierarchy, and user-centric workflows.</li>
+                  <li>Translating product requirements into clear user flows, wireframes, and interactive prototypes.</li>
+                  <li>Collaborating on design iterations to refine mobile and web user experiences.</li>
+                </ul>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline-item card-glass">
+                <div class="item-badge-row">
+                  <span class="role-badge">Independent UX/UI Projects</span>
+                  <span class="period-pill">Self-Directed &amp; Hands-On</span>
+                </div>
+                <h4 class="company-name">Portfolio Practice &amp; Case Studies</h4>
+                <ul class="timeline-points">
+                  <li>Designed end-to-end user interfaces, including complete wireframing, component design, and interactive prototyping.</li>
+                  <li>Applied user research principles to real-world app concepts (such as direct-to-consumer marketplaces).</li>
+                  <li>Built responsive design systems tailored for rapid iteration in Figma.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column reveal-right">
+            <div class="column-header">
+              <div class="col-icon edu-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <h3 class="col-title">Education</h3>
+            </div>
+
+            <div class="timeline-items">
+              <!-- Item 1 -->
+              <div class="timeline-item card-glass education-card">
+                <div class="item-badge-row">
+                  <span class="degree-badge">B.Sc. in Computer Science</span>
+                  <span class="period-pill grad-pill">Graduation Year: 2026</span>
+                </div>
+                <h4 class="institution-name">Puratchi Thalaivar Dr. MGR Government Arts and Science College</h4>
+                <p class="university-name">Affiliated with University of Madras</p>
+                <div class="edu-highlights">
+                  <div class="edu-tag">Computer Science Foundations</div>
+                  <div class="edu-tag">Web Technologies</div>
+                  <div class="edu-tag">Analytical Problem Solving</div>
+                  <div class="edu-tag">Software Logic &amp; Architecture</div>
+                </div>
+                <p class="edu-desc">
+                  Leveraging a Computer Science foundation to understand software architecture, technical constraints, and developer handoff—empowering more feasible, engineering-friendly UX designs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. CONTACT & FOOTER SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag"><span class="section-num">05</span> GET IN TOUCH</div>
+          <h2 class="section-title">Let's build something remarkable together.</h2>
+          <p class="section-subtitle">Open for full-time UI/UX opportunities, internships, and freelance projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Box -->
+          <div class="contact-info-card card-glass reveal-left">
+            <div class="contact-badge-header">
+              <span class="status-dot"></span>
+              <span>Available for New Projects &amp; Roles</span>
+            </div>
+
+            <h3 class="contact-info-title">Have a project in mind or an exciting role?</h3>
+            <p class="contact-info-desc">
+              Whether you need end-to-end mobile app design, wireframing, interactive Figma prototypes, or a complete design system, feel free to reach out. I'm always open to discussing new design opportunities!
+            </p>
+
+            <div class="direct-contact-items">
+              <div class="direct-item">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">Email Address</span>
+                  <a href="mailto:saranyat5723@gmail.com" class="direct-link">saranyat5723@gmail.com</a>
+                </div>
+                <button class="copy-icon-btn copy-email-btn" data-email="saranyat5723@gmail.com" title="Copy Email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <div class="direct-item">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">Location</span>
+                  <span class="direct-val">Chengalpattu, Tamil Nadu, India</span>
+                </div>
+              </div>
+
+              <div class="direct-item">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+                </div>
+                <div class="direct-text">
+                  <span class="direct-label">Figma Showcase</span>
+                  <a href="https://www.figma.com/proto/vwuZeeGIDOZQnzNbLYD56X/sweets?node-id=69-133&p=f&t=VWzfDO6OPXDsxlv4-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=168%3A977&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" class="direct-link">Explore Figma Prototypes ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card card-glass reveal-right">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="userName" class="form-label">Your Name</label>
+                <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Your Email</label>
+                <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType" class="form-label">Interest / Opportunity Type</label>
+                <select id="projectType" name="projectType" class="form-input form-select">
+                  <option value="Full-Time Role">Full-Time UI/UX Role</option>
+                  <option value="Design Internship">Design Internship</option>
+                  <option value="Freelance Project">Freelance Mobile / Web Design</option>
+                  <option value="General Inquiry">General Conversation / Mentorship</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Message</label>
+                <textarea id="userMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Tell me about your product, project, or role requirements..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <div class="form-success-state" id="formSuccessState" style="display: none;">
+              <div class="success-icon-wrap">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h4 class="success-title">Message Ready!</h4>
+              <p class="success-desc">Thank you for reaching out! Opening your default email client with your pre-filled message, or you can write directly to <strong>saranyat5723@gmail.com</strong>.</p>
+              <button class="btn btn-secondary btn-sm" id="resetFormBtn">Send Another Note</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-text">Saranya</span>
+        </a>
+        <p class="footer-tagline">Designing intuitive, human-centered experiences for mobile &amp; web.</p>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-copy">© 2026 T. Saranya. All rights reserved.</p>
+        <p class="footer-subcopy">Crafted with precision &amp; modern web standards.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Project Case Studies -->
+  <div class="modal-backdrop" id="caseStudyModal" aria-hidden="true" role="dialog">
+    <div class="modal-card card-glass">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Dynamic content filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy Actions -->
+  <div class="toast-container" id="toastContainer" aria-live="polite">
+    <div class="toast" id="toast">
+      <span class="toast-icon">✓</span>
+      <span class="toast-message" id="toastMsg">Email copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
